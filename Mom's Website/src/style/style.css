@@ -1,0 +1,311 @@
+html {
+    box-sizing: border-box;
+    /*font-size: 16px;*/
+    background-color:#d7652e;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit; 
+  }
+  
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* images and videos max out at full width */
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  header, .ote, p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav, ul{
+    display:flex;
+    list-style: none;
+    border-bottom: 3px solid whitesmoke;
+  }
+  
+  
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    padding-right: 300px;
+  
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+  }
+  h1{
+    position: relative;
+    top: 200px;
+    width: 500px;
+    font-size: 70px;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    text-shadow: 2px 2px 8px #242020;
+    padding: 40px;
+  }
+  h2{
+    position: relative;
+    bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 150px;
+    padding-bottom: 40px;
+    color: #2ea0d7;
+    text-shadow: 2px 2px 8px #242020;
+  }
+  
+  .logo{
+    position: relative;
+    
+  }
+  
+  nav{
+    width: 100%;
+  }
+  
+  .lessons{
+    white-space: pre;
+    position: relative;
+    bottom: 950px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 8px #242020;
+  }
+  
+  #about{
+    position: relative;
+    bottom: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .about_head{
+    font-family: 'Lobster Two', cursive;
+    color: rgb(16,91,165);
+    font-size: 50px;
+  }
+  .about_text{
+    white-space: pre;
+    position: relative;
+    bottom: 50px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .fadeInLeft{
+    -webkit-animation: fadeInLeft 5s both;
+    -moz-animation: fadeInLeft 5s both;
+    -o-animation: fadeInLeft 5s both;
+    animation: fadeInLeft 5s both;
+  }
+  
+  @-webkit-keyframes fadeInLet{
+    0%{
+      opacity: 0;
+      -webkit-transform: translateX(-150px);
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes fadeInLeft{
+      0%{
+      opacity: 0;
+      -moz-transform: translateX(-150px);
+    }
+    100%{
+      opacity: 1;
+      -moz-transform: translateX(0);
+    }
+  }
+  
+  @-webkit-keyframes fadeInLeft{
+      0%{
+      opacity: 0;
+      -o-transform: translateX(-150px);
+    }
+    100%{
+      opacity: 1;
+      -0-transform: translateX(0);
+    }
+  }
+  
+  @-webkit-keyframes fadeInLeft{
+      0%{
+      opacity: 0;
+      transform: translateX(-150px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .inspo{
+    position: relative;
+    bottom: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .inspo_head{
+    position: relative;
+    right: 400px;
+    font-family: 'Lobster Two', cursive;
+    color: rgb(16,91,165);
+    font-size: 80px;
+  }
+  
+  .inspo_text{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .key{
+    position: relative;
+    display: flex;
+    bottom: 400px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .key_head{
+    position: relative;
+    right: 400px;
+    color: rgb(16,91,165);
+    font-family: 'Lobster Two', cursive;
+    font-size: 80px;
+  }
+  
+  .key_text{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .closing{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    bottom: 30px;
+  }
+  
+  .closing_head{
+    font-family: 'Lobster Two', cursive;
+    color: rgb(16,91,165);
+    font-size: 80px;
+    bottom: 900px;
+  }
+  
+  .ote{
+    position: relative;
+    bottom: 600px;
+  }
+  
+  .closing_text1, .closing_text2{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .fade-in.appear{
+    opacity: 1;
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+    object-fit: scale-down;
+    position: relative;
+    bottom: 600px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    bottom: 300px;
+    bottom: 100px;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    position: relative;
+    left: 100px;
+    bottom: 600px;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
